@@ -3,6 +3,7 @@
     "property": "mod.spaces-icons.size_preset",
     "label": "Space icon size",
     "type": "dropdown",
+    "value": "number",
     "defaultValue": 100,
     "placeholder": "Choose a size preset",
     "options": [
@@ -32,6 +33,7 @@
     "property": "mod.spaces-icons.active_highlight_color",
     "label": "Active space highlight color",
     "type": "string",
+    "border": "value",
     "defaultValue": "#4f8cff",
     "placeholder": "e.g. #4f8cff or rgb(79 140 255)"
   }
