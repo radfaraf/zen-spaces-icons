@@ -6,6 +6,10 @@ workspace switcher icons shown in the browser UI:
 - a size preset
 - an active-space highlight color preset
 
+## Preview
+
+![Spaces Icons preview](assets/spaces-icons-preview.png)
+
 ## What The Mod Changes
 
 - only the workspace switcher icons are resized
@@ -48,13 +52,15 @@ Choose one of these preset colors:
 - Indigo
 - Slate
 - Silver
+- White
+- Black
 
 ## Usage Notes
 
 - The color setting uses a dropdown so it works cleanly with Zen's documented
   mod preference UI.
 - Larger size presets increase the icon size while keeping the highlight aligned.
-- The default highlight color is Blue.
+- The default highlight color is Cyan.
 
 ## Troubleshooting
 
