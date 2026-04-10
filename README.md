@@ -62,9 +62,4 @@ Choose one of these preset colors:
 - Larger size presets increase the icon size while keeping the highlight aligned.
 - The default highlight color is Cyan.
 
-## Troubleshooting
 
-- If the icon size changes but the settings do not appear in Zen, load the mod
-  through a Zen mod workflow that reads `preferences.json`.
-- If a future Zen update changes the workspace DOM, the CSS selectors may need
-  to be refreshed.
