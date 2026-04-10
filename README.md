@@ -1,49 +1,64 @@
-SPACES ICONS MANUAL
-
-Overview
+# Spaces Icons
 
 Spaces Icons is a Zen Browser workspace-icon mod. It adds two settings for the
 workspace switcher icons shown in the browser UI:
 
 - a size preset
-- an active-space highlight color
+- an active-space highlight color preset
 
-What The Mod Changes
+## What The Mod Changes
 
 - only the workspace switcher icons are resized
-- only the active workspace gets the colored outline ring
+- only the active workspace gets the colored highlight box
 - the current-workspace label, tabs, and other toolbar icons are left alone
 
-Available Settings
+## Available Settings
 
-1. Space icon size
-   Choose one of these presets:
-   - 100%
-   - 125%
-   - 150%
-   - 200%
-   - 250%
+### Space icon size
 
-2. Active space highlight color
-   Enter a valid CSS color value such as:
-   - #4f8cff
-   - rgb(79 140 255)
-   - dodgerblue
+Choose one of these presets:
 
-Usage Notes
+- 100%
+- 125%
+- 150%
+- 200%
+- 250%
 
-- The color field is a text value because Zen's documented mod preference types
-  support dropdown, checkbox, and string inputs.
-- If the color value is invalid, the active-space ring will not render until
-  the value is corrected.
-- Larger size presets increase both the icon size and the button size so the
-  icon is less likely to clip.
+### Active space highlight color
 
-Troubleshooting
+Choose one of these preset colors:
+
+- Blue
+- Sky
+- Cyan
+- Teal
+- Mint
+- Green
+- Lime
+- Yellow
+- Amber
+- Orange
+- Coral
+- Red
+- Rose
+- Pink
+- Fuchsia
+- Purple
+- Violet
+- Indigo
+- Slate
+- Silver
+
+## Usage Notes
+
+- The color setting uses a dropdown so it works cleanly with Zen's documented
+  mod preference UI.
+- Larger size presets increase the icon size while keeping the highlight aligned.
+- The default highlight color is Blue.
+
+## Troubleshooting
 
 - If the icon size changes but the settings do not appear in Zen, load the mod
-  through a Zen mod workflow that reads preferences.json.
-- If the highlight color does not appear, test with a simple hex value such as
-  #4f8cff first.
+  through a Zen mod workflow that reads `preferences.json`.
 - If a future Zen update changes the workspace DOM, the CSS selectors may need
   to be refreshed.

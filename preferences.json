@@ -32,9 +32,91 @@
   {
     "property": "mod.spaces-icons.active_highlight_color",
     "label": "Active space highlight color",
-    "type": "string",
-    "border": "value",
-    "defaultValue": "#4f8cff",
-    "placeholder": "e.g. #4f8cff or rgb(79 140 255)"
+    "type": "dropdown",
+    "value": "number",
+    "defaultValue": 1,
+    "placeholder": "Choose a highlight color",
+    "options": [
+      {
+        "label": "Blue",
+        "value": 1
+      },
+      {
+        "label": "Sky",
+        "value": 2
+      },
+      {
+        "label": "Cyan",
+        "value": 3
+      },
+      {
+        "label": "Teal",
+        "value": 4
+      },
+      {
+        "label": "Mint",
+        "value": 5
+      },
+      {
+        "label": "Green",
+        "value": 6
+      },
+      {
+        "label": "Lime",
+        "value": 7
+      },
+      {
+        "label": "Yellow",
+        "value": 8
+      },
+      {
+        "label": "Amber",
+        "value": 9
+      },
+      {
+        "label": "Orange",
+        "value": 10
+      },
+      {
+        "label": "Coral",
+        "value": 11
+      },
+      {
+        "label": "Red",
+        "value": 12
+      },
+      {
+        "label": "Rose",
+        "value": 13
+      },
+      {
+        "label": "Pink",
+        "value": 14
+      },
+      {
+        "label": "Fuchsia",
+        "value": 15
+      },
+      {
+        "label": "Purple",
+        "value": 16
+      },
+      {
+        "label": "Violet",
+        "value": 17
+      },
+      {
+        "label": "Indigo",
+        "value": 18
+      },
+      {
+        "label": "Slate",
+        "value": 19
+      },
+      {
+        "label": "Silver",
+        "value": 20
+      }
+    ]
   }
 ]

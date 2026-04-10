@@ -4,14 +4,7 @@
   --spaces-icons-icon-size: calc(16px * var(--spaces-icons-scale));
   --spaces-icons-active-box-size: calc(var(--spaces-icons-icon-size) + 10px);
 
-  /*
-   * String preferences become CSS vars with dots replaced by hyphens.
-   * This keeps the active ring color user-configurable from Zen's mod settings.
-   */
-  --spaces-icons-highlight-color: var(
-    --mod-spaces-icons-active_highlight_color,
-    #4f8cff
-  );
+  --spaces-icons-highlight-color: #4f8cff;
 }
 
 @media (-moz-pref("mod.spaces-icons.size_preset", 125)) {
@@ -35,6 +28,120 @@
 @media (-moz-pref("mod.spaces-icons.size_preset", 250)) {
   :root {
     --spaces-icons-scale: 2.5;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 2)) {
+  :root {
+    --spaces-icons-highlight-color: #38bdf8;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 3)) {
+  :root {
+    --spaces-icons-highlight-color: #22d3ee;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 4)) {
+  :root {
+    --spaces-icons-highlight-color: #14b8a6;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 5)) {
+  :root {
+    --spaces-icons-highlight-color: #34d399;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 6)) {
+  :root {
+    --spaces-icons-highlight-color: #22c55e;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 7)) {
+  :root {
+    --spaces-icons-highlight-color: #84cc16;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 8)) {
+  :root {
+    --spaces-icons-highlight-color: #eab308;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 9)) {
+  :root {
+    --spaces-icons-highlight-color: #f59e0b;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 10)) {
+  :root {
+    --spaces-icons-highlight-color: #f97316;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 11)) {
+  :root {
+    --spaces-icons-highlight-color: #fb7185;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 12)) {
+  :root {
+    --spaces-icons-highlight-color: #ef4444;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 13)) {
+  :root {
+    --spaces-icons-highlight-color: #f43f5e;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 14)) {
+  :root {
+    --spaces-icons-highlight-color: #ec4899;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 15)) {
+  :root {
+    --spaces-icons-highlight-color: #d946ef;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 16)) {
+  :root {
+    --spaces-icons-highlight-color: #a855f7;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 17)) {
+  :root {
+    --spaces-icons-highlight-color: #8b5cf6;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 18)) {
+  :root {
+    --spaces-icons-highlight-color: #6366f1;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 19)) {
+  :root {
+    --spaces-icons-highlight-color: #94a3b8;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 20)) {
+  :root {
+    --spaces-icons-highlight-color: #d1d5db;
   }
 }
 
