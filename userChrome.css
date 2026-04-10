@@ -4,7 +4,6 @@
   --spaces-icons-icon-size: calc(16px * var(--spaces-icons-scale));
   --spaces-icons-active-box-size: calc(var(--spaces-icons-icon-size) + 10px);
   --spaces-icons-button-gap: calc(2px + (var(--spaces-icons-scale) - 1) * 4px);
-  --spaces-icons-tooltip-font-size: 12px;
 
   --spaces-icons-highlight-color: #22d3ee;
 }
@@ -30,54 +29,6 @@
 @media (-moz-pref("mod.spaces-icons.size_preset", 250)) {
   :root {
     --spaces-icons-scale: 2.5;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 10)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 10px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 11)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 11px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 13)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 13px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 14)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 14px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 15)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 15px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 16)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 16px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 17)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 17px;
-  }
-}
-
-@media (-moz-pref("mod.spaces-icons.tooltip_font_size", 18)) {
-  :root {
-    --spaces-icons-tooltip-font-size: 18px;
   }
 }
 
@@ -260,13 +211,6 @@
 #zen-workspaces-button .zen-workspace-icon {
   display: block !important;
   line-height: 1 !important;
-}
-
-tooltip,
-tooltip label,
-tooltip description,
-.tooltip-label {
-  font-size: var(--spaces-icons-tooltip-font-size) !important;
 }
 
 #zen-workspaces-button :is(toolbarbutton, .subviewbutton)[active="true"] {
