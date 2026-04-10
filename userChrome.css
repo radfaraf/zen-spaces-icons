@@ -214,6 +214,11 @@
 }
 
 @media not (-moz-pref("mod.spaces-icons.only_color_when_active")) {
+  #zen-workspaces-button :is(toolbarbutton, .subviewbutton):not([active="true"]) {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
   #zen-workspaces-button :is(toolbarbutton, .subviewbutton):not([active="true"])
     :is(.toolbarbutton-icon, .toolbarbutton-badge-stack, .zen-workspace-icon, image) {
     filter: none !important;
