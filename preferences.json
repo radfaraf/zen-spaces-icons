@@ -34,7 +34,7 @@
     "label": "Active space highlight color",
     "type": "dropdown",
     "value": "number",
-    "defaultValue": 1,
+    "defaultValue": 3,
     "placeholder": "Choose a highlight color",
     "options": [
       {

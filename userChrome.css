@@ -4,7 +4,7 @@
   --spaces-icons-icon-size: calc(16px * var(--spaces-icons-scale));
   --spaces-icons-active-box-size: calc(var(--spaces-icons-icon-size) + 10px);
 
-  --spaces-icons-highlight-color: #4f8cff;
+  --spaces-icons-highlight-color: #22d3ee;
 }
 
 @media (-moz-pref("mod.spaces-icons.size_preset", 125)) {
