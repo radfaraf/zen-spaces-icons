@@ -1,51 +1,49 @@
-# Spaces Icons
+SPACES ICONS MANUAL
 
-`Spaces Icons` is a Zen Browser mod that makes the workspace switcher icons
-easier to see and easier to customize.
+Overview
 
-## What It Does
+Spaces Icons is a Zen Browser workspace-icon mod. It adds two settings for the
+workspace switcher icons shown in the browser UI:
 
-- adds a size preset for workspace icons: `100%`, `125%`, `150%`, `200%`, `250%`
-- adds a configurable outline ring for the active workspace icon
-- keeps the scope limited to the workspace switcher instead of restyling the
-  rest of the sidebar
+- a size preset
+- an active-space highlight color
 
-## Files
+What The Mod Changes
 
-- `theme.json`: mod metadata
-- `preferences.json`: Zen mod settings definitions
-- `userChrome.css`: browser UI styling for the workspace icons
-- `docs/manuals/spaces_icons_manual.txt`: basic user manual
-- `docs/requirements/spaces_icons_requirements.md`: current intended behavior
+- only the workspace switcher icons are resized
+- only the active workspace gets the colored outline ring
+- the current-workspace label, tabs, and other toolbar icons are left alone
 
-## Settings
+Available Settings
 
-### Space icon size
+1. Space icon size
+   Choose one of these presets:
+   - 100%
+   - 125%
+   - 150%
+   - 200%
+   - 250%
 
-Uses a Zen `dropdown` preference with these presets:
+2. Active space highlight color
+   Enter a valid CSS color value such as:
+   - #4f8cff
+   - rgb(79 140 255)
+   - dodgerblue
 
-- `100%`
-- `125%`
-- `150%`
-- `200%`
-- `250%`
+Usage Notes
 
-### Active space highlight color
+- The color field is a text value because Zen's documented mod preference types
+  support dropdown, checkbox, and string inputs.
+- If the color value is invalid, the active-space ring will not render until
+  the value is corrected.
+- Larger size presets increase both the icon size and the button size so the
+  icon is less likely to clip.
 
-Uses a Zen `string` preference. Enter any valid CSS color value, such as:
+Troubleshooting
 
-- `#4f8cff`
-- `rgb(79 140 255)`
-- `dodgerblue`
-
-If the value is not a valid CSS color, Zen drops the color-dependent ring
-styling and the rest of the mod continues to work.
-
-## Notes
-
-- The preference wiring follows Zen's documented `preferences.json` model for
-  `dropdown` and `string` values.
-- For full settings support, load this as a Zen mod package that reads
-  `preferences.json`.
-- For quick CSS experimentation, you can still test the styling in Zen's
-  `userChrome.css` live-editing workflow.
+- If the icon size changes but the settings do not appear in Zen, load the mod
+  through a Zen mod workflow that reads preferences.json.
+- If the highlight color does not appear, test with a simple hex value such as
+  #4f8cff first.
+- If a future Zen update changes the workspace DOM, the CSS selectors may need
+  to be refreshed.
