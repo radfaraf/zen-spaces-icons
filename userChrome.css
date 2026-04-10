@@ -146,6 +146,18 @@
   }
 }
 
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 21)) {
+  :root {
+    --spaces-icons-highlight-color: #ffffff;
+  }
+}
+
+@media (-moz-pref("mod.spaces-icons.active_highlight_color", 22)) {
+  :root {
+    --spaces-icons-highlight-color: #111111;
+  }
+}
+
 #zen-workspaces-button {
   overflow: visible !important;
 }

@@ -116,6 +116,14 @@
       {
         "label": "Silver",
         "value": 20
+      },
+      {
+        "label": "White",
+        "value": 21
+      },
+      {
+        "label": "Black",
+        "value": 22
       }
     ]
   }
