@@ -12,7 +12,7 @@ workspace switcher icons shown in the browser UI:
 
 ## What The Mod Changes
 
-- only the workspace switcher icons are resized
+- only the workspace switcher icons are resized with a 100-250% size setting. Leave 100% for original size.
 - only the active workspace gets the colored highlight box
 - the current-workspace label, tabs, and other toolbar icons are left alone
 
