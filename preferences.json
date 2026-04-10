@@ -30,6 +30,12 @@
     ]
   },
   {
+    "property": "mod.spaces-icons.only_color_when_active",
+    "label": "Only show colored icons for the active space",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
     "property": "mod.spaces-icons.active_highlight_color",
     "label": "Active space highlight color",
     "type": "dropdown",

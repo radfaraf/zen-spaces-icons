@@ -1,9 +1,10 @@
 # Spaces Icons
 
-Spaces Icons is a Zen Browser workspace-icon mod. It adds two settings for the
+Spaces Icons is a Zen Browser workspace-icon mod. It adds three settings for the
 workspace switcher icons shown in the browser UI:
 
 - a size preset
+- a color-mode toggle for inactive spaces
 - an active-space highlight color preset
 
 ## Preview
@@ -55,9 +56,17 @@ Choose one of these preset colors:
 - White
 - Black
 
+### Inactive icon color mode
+
+Choose whether colorful space icons stay colored when inactive:
+
+- On: only the active space shows full icon color
+- Off: colorful space icons stay colored even when inactive
+
 ## Usage Notes
 
 - The color setting uses a dropdown so it works cleanly with Zen's documented
   mod preference UI.
 - Larger size presets increase the icon size while keeping the highlight aligned.
+- The inactive icon color toggle defaults to active-only coloring.
 - The default highlight color is Cyan.
