@@ -1,9 +1,10 @@
 # Spaces Icons
 
-Spaces Icons is a Zen Browser workspace-icon mod. It adds two settings for the
+Spaces Icons is a Zen Browser workspace-icon mod. It adds three settings for the
 workspace switcher icons shown in the browser UI:
 
 - a size preset
+- a tooltip font size preset
 - an active-space highlight color preset
 
 ## Preview
@@ -27,6 +28,20 @@ Choose one of these presets:
 - 150%
 - 200%
 - 250%
+
+### Tooltip font size
+
+Choose one of these presets:
+
+- 10 px
+- 11 px
+- 12 px
+- 13 px
+- 14 px
+- 15 px
+- 16 px
+- 17 px
+- 18 px
 
 ### Active space highlight color
 
@@ -60,6 +75,6 @@ Choose one of these preset colors:
 - The color setting uses a dropdown so it works cleanly with Zen's documented
   mod preference UI.
 - Larger size presets increase the icon size while keeping the highlight aligned.
+- Tooltip font size defaults to 12 px.
 - The default highlight color is Cyan.
-
 
