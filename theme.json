@@ -1,0 +1,21 @@
+{
+  "id": "spaces-icons",
+  "author": "robertw",
+  "name": "Spaces Icons",
+  "description": "Resize Zen workspace icons and highlight the active space.",
+  "version": "0.1.0",
+  "createdAt": "2026-04-10",
+  "updatedAt": "2026-04-10",
+  "style": {
+    "chrome": "userChrome.css",
+    "content": ""
+  },
+  "tags": [
+    "chrome",
+    "workspaces",
+    "accessibility"
+  ],
+  "fork": [
+    "zen"
+  ]
+}

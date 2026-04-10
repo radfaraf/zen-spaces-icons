@@ -1,0 +1,38 @@
+[
+  {
+    "property": "mod.spaces-icons.size_preset",
+    "label": "Space icon size",
+    "type": "dropdown",
+    "defaultValue": 100,
+    "placeholder": "Choose a size preset",
+    "options": [
+      {
+        "label": "100%",
+        "value": 100
+      },
+      {
+        "label": "125%",
+        "value": 125
+      },
+      {
+        "label": "150%",
+        "value": 150
+      },
+      {
+        "label": "200%",
+        "value": 200
+      },
+      {
+        "label": "250%",
+        "value": 250
+      }
+    ]
+  },
+  {
+    "property": "mod.spaces-icons.active_highlight_color",
+    "label": "Active space highlight color",
+    "type": "string",
+    "defaultValue": "#4f8cff",
+    "placeholder": "e.g. #4f8cff or rgb(79 140 255)"
+  }
+]
