@@ -1,6 +1,7 @@
 {
   "id": "spaces-icons",
   "author": "radfaraf",
+  "ai": "yes",
   "name": "Spaces Icons",
   "description": "Resize Zen workspace icons and highlight the active space.",
   "homepage": "https://github.com/radfaraf/zen-spaces-icons",
