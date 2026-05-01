@@ -5,12 +5,19 @@
   "name": "Spaces Icons",
   "description": "Resize Zen workspace icons and highlight the active space.",
   "homepage": "https://github.com/radfaraf/zen-spaces-icons",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "createdAt": "2026-04-10",
   "updatedAt": "2026-05-01",
   "style": {
     "chrome": "userChrome.css",
     "content": ""
+  },
+  "scripts": {
+    "workspace-scroll-guard.uc.js": {
+      "include": [
+        "chrome://browser/content/browser.xhtml"
+      ]
+    }
   },
   "tags": [
     "chrome",
