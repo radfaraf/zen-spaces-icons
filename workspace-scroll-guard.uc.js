@@ -21,6 +21,35 @@
       },
       true
     );
+
+    workspaceStrip.addEventListener(
+      "wheel",
+      event => {
+        if (workspaceStrip.scrollWidth <= workspaceStrip.clientWidth) {
+          return;
+        }
+
+        const unit =
+          event.deltaMode === WheelEvent.DOM_DELTA_LINE
+            ? 16
+            : event.deltaMode === WheelEvent.DOM_DELTA_PAGE
+              ? workspaceStrip.clientWidth
+              : 1;
+        const delta =
+          Math.abs(event.deltaX) > Math.abs(event.deltaY)
+            ? event.deltaX
+            : event.deltaY;
+
+        if (!delta) {
+          return;
+        }
+
+        workspaceStrip.scrollLeft += delta * unit;
+        event.preventDefault();
+        event.stopPropagation();
+      },
+      { passive: false }
+    );
   };
 
   if (document.readyState === "loading") {

@@ -18,6 +18,7 @@ workspace switcher icons shown in the browser UI:
 - 100% preserves Zen's native workspace icon sizing and spacing
 - the workspace switcher uses the remaining middle space and can scroll horizontally on hover/focus when there is not enough room
 - hovering over workspace icons does not move the scroll position
+- mouse wheel up/down over the workspace strip scrolls it left/right when it is overflowing
 - the current-workspace label, tabs, and other toolbar icons are left alone
 
 ## Available Settings
@@ -72,7 +73,7 @@ Choose whether colorful space icons stay colored when inactive:
   mod preference UI.
 - Larger size presets increase the icon size while keeping the highlight aligned.
 - Empty workspace dots scale from Zen's native dot size instead of becoming full-size icons.
-- When the workspace switcher is too tight, hover or focus the space icons to show the thin horizontal scrollbar, then drag or scroll the bar to reach hidden spaces.
+- When the workspace switcher is too tight, hover or focus the space icons to show the thin horizontal scrollbar, then drag the bar or use the mouse wheel over the strip to reach hidden spaces.
 - The strip blocks Zen's default hover-to-scroll behavior so the scroll position changes only through manual scrolling.
 - The inactive icon color toggle defaults to active-only coloring.
 - The default highlight color is Cyan.
