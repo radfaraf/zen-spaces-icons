@@ -16,6 +16,7 @@ workspace switcher icons shown in the browser UI:
 - only the workspace switcher icons are resized with a 100-250% size setting. Leave 100% for original size.
 - only the active workspace gets the colored highlight box
 - 100% preserves Zen's native workspace icon sizing and spacing
+- the workspace switcher can scroll horizontally when there is not enough room
 - the current-workspace label, tabs, and other toolbar icons are left alone
 
 ## Available Settings
@@ -70,5 +71,6 @@ Choose whether colorful space icons stay colored when inactive:
   mod preference UI.
 - Larger size presets increase the icon size while keeping the highlight aligned.
 - Empty workspace dots scale from Zen's native dot size instead of becoming full-size icons.
+- When the workspace switcher is too tight, scroll left or right over the space icons to reach hidden spaces.
 - The inactive icon color toggle defaults to active-only coloring.
 - The default highlight color is Cyan.
