@@ -167,11 +167,16 @@
   max-width: 100% !important;
   min-width: 0 !important;
   width: auto !important;
-  overflow-x: auto !important;
+  overflow-x: clip !important;
   overflow-y: hidden !important;
-  scrollbar-width: thin !important;
+  scrollbar-width: none !important;
   scroll-behavior: smooth !important;
   scroll-padding-inline: 6px !important;
+}
+
+#zen-workspaces-button:is(:hover, :focus-within) {
+  overflow-x: auto !important;
+  scrollbar-width: thin !important;
 }
 
 #zen-sidebar-foot-buttons > :not(#zen-workspaces-button) {
@@ -194,8 +199,12 @@
   (-moz-pref("mod.spaces-icons.size_preset", 200)),
   (-moz-pref("mod.spaces-icons.size_preset", 250)) {
   #zen-workspaces-button {
-    overflow-x: auto !important;
+    overflow-x: clip !important;
     overflow-y: hidden !important;
+  }
+
+  #zen-workspaces-button:is(:hover, :focus-within) {
+    overflow-x: auto !important;
   }
 
   #zen-workspaces-button :is(toolbarbutton, .subviewbutton) {
