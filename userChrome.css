@@ -2,13 +2,9 @@
 :root {
   --spaces-icons-scale: 1;
   --spaces-icons-icon-size: calc(16px * var(--spaces-icons-scale));
+  --spaces-icons-empty-icon-size: calc(6px * var(--spaces-icons-scale));
   --spaces-icons-active-box-size: calc(var(--spaces-icons-icon-size) + 10px);
   --spaces-icons-button-gap: calc(2px + (var(--spaces-icons-scale) - 1) * 4px);
-  --spaces-icons-neighbor-gap: 18px;
-  --spaces-icons-edge-buffer: calc(
-    var(--spaces-icons-neighbor-gap) +
-    max(0px, calc((var(--spaces-icons-active-box-size) - 26px) / 2))
-  );
 
   --spaces-icons-highlight-color: #22d3ee;
 }
@@ -163,63 +159,70 @@
   }
 }
 
-#zen-workspaces-button {
-  /* The first/last workspace buttons sit next to regular toolbar icons. */
-  margin-left: var(--spaces-icons-edge-buffer) !important;
-  margin-right: var(--spaces-icons-edge-buffer) !important;
-  margin-inline: var(--spaces-icons-edge-buffer) !important;
-  overflow: visible !important;
-}
-
 #zen-workspaces-button :is(toolbarbutton, .subviewbutton) {
   position: relative !important;
-  display: grid !important;
-  place-items: center !important;
-  min-width: var(--spaces-icons-active-box-size) !important;
-  min-height: var(--spaces-icons-active-box-size) !important;
-  width: var(--spaces-icons-active-box-size) !important;
-  height: var(--spaces-icons-active-box-size) !important;
-  margin-inline: calc(var(--spaces-icons-button-gap) / 2) !important;
-  overflow: visible !important;
-  padding: 0 !important;
-  line-height: 1 !important;
   border-radius: 10px !important;
-  box-sizing: border-box !important;
   transition:
     background-color 0.2s ease,
     box-shadow 0.2s ease !important;
 }
 
-#zen-workspaces-button :is(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
-  position: relative !important;
-  display: grid !important;
-  place-items: center !important;
-  width: var(--spaces-icons-active-box-size) !important;
-  height: var(--spaces-icons-active-box-size) !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: visible !important;
-  border-radius: 8px !important;
-  box-sizing: border-box !important;
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease !important;
-}
+@media (-moz-pref("mod.spaces-icons.size_preset", 125)),
+  (-moz-pref("mod.spaces-icons.size_preset", 150)),
+  (-moz-pref("mod.spaces-icons.size_preset", 200)),
+  (-moz-pref("mod.spaces-icons.size_preset", 250)) {
+  #zen-workspaces-button {
+    overflow: visible !important;
+  }
 
-#zen-workspaces-button :is(.zen-workspace-icon, .toolbarbutton-icon, image) {
-  width: var(--spaces-icons-icon-size) !important;
-  height: var(--spaces-icons-icon-size) !important;
-  min-width: var(--spaces-icons-icon-size) !important;
-  min-height: var(--spaces-icons-icon-size) !important;
-  font-size: var(--spaces-icons-icon-size) !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
+  #zen-workspaces-button :is(toolbarbutton, .subviewbutton) {
+    display: grid !important;
+    place-items: center !important;
+    min-width: var(--spaces-icons-active-box-size) !important;
+    min-height: var(--spaces-icons-active-box-size) !important;
+    height: var(--spaces-icons-active-box-size) !important;
+    margin-inline: calc(var(--spaces-icons-button-gap) / 2) !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    box-sizing: border-box !important;
+  }
 
-#zen-workspaces-button .zen-workspace-icon {
-  display: block !important;
-  line-height: 1 !important;
+  #zen-workspaces-button :is(.toolbarbutton-icon, .toolbarbutton-badge-stack) {
+    position: relative !important;
+    display: grid !important;
+    place-items: center !important;
+    width: var(--spaces-icons-active-box-size) !important;
+    height: var(--spaces-icons-active-box-size) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease !important;
+  }
+
+  #zen-workspaces-button .zen-workspace-icon:not([no-icon="true"]) {
+    display: block !important;
+    width: var(--spaces-icons-icon-size) !important;
+    height: var(--spaces-icons-icon-size) !important;
+    min-width: var(--spaces-icons-icon-size) !important;
+    min-height: var(--spaces-icons-icon-size) !important;
+    font-size: var(--spaces-icons-icon-size) !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #zen-workspaces-button .zen-workspace-icon[no-icon="true"] {
+    width: var(--spaces-icons-empty-icon-size) !important;
+    height: var(--spaces-icons-empty-icon-size) !important;
+    min-width: var(--spaces-icons-empty-icon-size) !important;
+    min-height: var(--spaces-icons-empty-icon-size) !important;
+  }
 }
 
 @media not (-moz-pref("mod.spaces-icons.only_color_when_active")) {
