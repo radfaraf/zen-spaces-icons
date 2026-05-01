@@ -161,15 +161,23 @@
 
 #zen-workspaces-button {
   /* Tight strips should scroll instead of letting centered overflow hit neighbors. */
+  flex: 1 1 0 !important;
   justify-content: flex-start !important;
   justify-content: safe center !important;
   max-width: 100% !important;
   min-width: 0 !important;
+  width: auto !important;
   overflow-x: auto !important;
   overflow-y: hidden !important;
-  scrollbar-width: none !important;
+  scrollbar-width: thin !important;
   scroll-behavior: smooth !important;
   scroll-padding-inline: 6px !important;
+}
+
+#zen-sidebar-foot-buttons > :not(#zen-workspaces-button) {
+  flex: 0 0 auto !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 #zen-workspaces-button :is(toolbarbutton, .subviewbutton) {
