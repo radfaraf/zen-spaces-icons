@@ -4,6 +4,10 @@
   --spaces-icons-icon-size: calc(16px * var(--spaces-icons-scale));
   --spaces-icons-active-box-size: calc(var(--spaces-icons-icon-size) + 10px);
   --spaces-icons-button-gap: calc(2px + (var(--spaces-icons-scale) - 1) * 4px);
+  --spaces-icons-edge-buffer: max(
+    0px,
+    calc((var(--spaces-icons-active-box-size) - 26px) / 2)
+  );
 
   --spaces-icons-highlight-color: #22d3ee;
 }
@@ -160,6 +164,16 @@
 
 #zen-workspaces-button {
   overflow: visible !important;
+}
+
+@media (-moz-pref("mod.spaces-icons.size_preset", 125)),
+  (-moz-pref("mod.spaces-icons.size_preset", 150)),
+  (-moz-pref("mod.spaces-icons.size_preset", 200)),
+  (-moz-pref("mod.spaces-icons.size_preset", 250)) {
+  #zen-workspaces-button {
+    /* Enlarged first/last workspace buttons can otherwise spill into toolbar neighbors. */
+    margin-inline: var(--spaces-icons-edge-buffer) !important;
+  }
 }
 
 #zen-workspaces-button :is(toolbarbutton, .subviewbutton) {
